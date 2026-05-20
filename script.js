@@ -9,6 +9,14 @@ document.addEventListener('DOMContentLoaded', function () {
    // --- CONFIGURATION DES LIENS DE CONTACT ---
     const contactLinks = [
         {
+            name: 'TELEGRAM 🌐',
+            url: 'https://t.me/TERPSCOMMANDE33',
+            icon: '#icon-telegram',
+            id: 'telegram-main',
+            className: 'telegram-main',
+            text: "TELEGRAM 🌐"
+        },
+        {
             name: 'PAGE INSTAGRAM 🟣',
             url: 'https://www.instagram.com/cali_terps33?igsh=ZXh4b3AzYXIzMHRt&utm_source=qr',
             icon: '#icon-instagram',
@@ -103,9 +111,25 @@ document.addEventListener('DOMContentLoaded', function () {
                     badgeText: '1 produit',
                     products: [
                         {
+                            id: 'SUPER BOOF X CHERRY 🍒🍋',
+                            name: 'SUPER BOOF X CHERRY 🍒🍋',
+                            farm: 'FRESH FROZEN 💦🥵',
+                            promoEligible: false,
+                            type: 'FRESH FROZEN',
+                            image: 'ProductSB.png',
+                            video: 'VideoSB.mp4',
+                            description: '',
+                            tarifs: [
+                                { weight: '5g', price: 70.00 },
+                                { weight: '10g', price: 130.00 },
+                                { weight: '25g', price: 250.00 },
+                                { weight: '50g', price: 450.00 }
+                            ]
+                        },
+                        {
                             id: 'HASH BURGER 🍔',
                             name: 'HASH BURGER 🍔',
-                            farm: 'RÉAL FRESH FROZEN 💦🥵',
+                            farm: 'FRESH FROZEN 💦🥵',
                             promoEligible: false,
                             type: 'FRESH FROZEN',
                             image: 'ProductBurger.png',
@@ -244,22 +268,23 @@ document.addEventListener('DOMContentLoaded', function () {
             farms: [
                 {
                     id: 'OLIVE_GUYANE',
-                    name: '🇬🇫 SPÉCIALITÉS 🇬🇫',
+                    name: '🇵🇪 SPÉCIALITÉS 🇵🇪',
                     image: '',
                     badgeText: '1 produit',
                     products: [
                         {
-                            id: 'OLIVE DE GUYANE',
-                            name: 'OLIVE DE GUYANE 🇬🇫',
-                            farm: 'PURETÉ 0,96 👅',
+                            id: 'PAVÉ',
+                            name: 'PAVÉ 🇵🇪',
+                            farm: 'PROVENANCE PÉROU 🇵🇪',
                             promoEligible: false,
                             type: 'Extra',
-                            image: '',
-                            video: '',
-                            description: '🇬🇫 <b>OLIVE DE GUYANE</b> 🇬🇫\n\nPureté 0,96. Qualité extrême pour utilisateurs avertis.',
+                            image: 'ProductPave.png',
+                            video: 'VideoPave.mov',
+                            description: 'PAVÉ PROVENANCE PÉROU 🇵🇪\n\nPureté 0,96. Qualité extrême pour utilisateurs avertis.',
                             tarifs: [
-                                { weight: '1g', price: 50.00 },
-                                { weight: '5g', price: 200.00 },
+                                { weight: '1g', price: 60.00 },
+                                { weight: '2g', price: 110.00 },
+                                { weight: '5g', price: 220.00 },
                                 { weight: '10g', price: 400.00 }
                             ]
                         }
