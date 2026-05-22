@@ -1155,8 +1155,10 @@ document.addEventListener('DOMContentLoaded', function () {
             showPage('page-cart');
         }
 
-        if (target.closest('#confirm-order-button')) {
-            const targetUsername = 'THEGAZCOMMANDE';
+       if (target.closest('#confirm-order-button')) {
+            // Remplace l'ancien identifiant par le bon compte de réception
+            const targetUsername = 'TERPSCOMMANDE33'; 
+            
             let message = formatOrderMessage();
             message = message.replace(/\*/g, '');
             const encodedMessage = encodeURIComponent(message);
