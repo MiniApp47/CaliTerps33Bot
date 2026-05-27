@@ -246,10 +246,11 @@ document.addEventListener('DOMContentLoaded', function () {
                             video: 'VideoRain.mp4',
                             description: '🍬 <b>RAINBOW</b> 🍬\n\nImport direct USA. Un profil terpénique sucré et coloré.',
                             tarifs: [
-                                { weight: '3.5g', price: 70.00 },
-                                { weight: '7g', price: 100.00 },
-                                { weight: '10.5g', price: 150.00 },
-                                { weight: '25g', price: 250.00 }
+                                { weight: '3.5g', price: 50.00 },
+                                { weight: '10g', price: 90.00 },
+                                { weight: '25g', price: 200.00 },
+                                { weight: '50g', price: 350.00 },
+                                { weight: '100g', price: 600.00 },
                             ]
                         }
                     ]
