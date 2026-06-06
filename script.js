@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         {
                             id: 'SUPER BOOF X CHERRY 🍒🍋',
                             name: 'SUPER BOOF X CHERRY 🍒🍋',
-                            farm: 'FRESH FROZEN 💦🥵',
+                            farm: '⛽ GAZ SÉLECTION',
                             promoEligible: false,
                             type: 'FRESH FROZEN',
                             image: 'ProductSB.png',
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         {
                             id: 'HASH BURGER 🍔',
                             name: 'HASH BURGER 🍔',
-                            farm: 'FRESH FROZEN 💦🥵',
+                            farm: '⛽ GAZ SÉLECTION',
                             promoEligible: false,
                             type: 'FRESH FROZEN',
                             image: 'ProductBurger.png',
@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         {
                             id: 'SUPER LEMON HAZE 🍋‍🟩',
                             name: 'SUPER LEMON HAZE 🍋‍🟩',
-                            farm: 'PLASMASTATIC 🥵⚡️',
+                            farm: '⛽ GAZ SÉLECTION',
                             promoEligible: false,
                             type: 'PLASMASTATIC',
                             image: 'ProductSLH.png',
