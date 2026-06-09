@@ -341,7 +341,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // --- NAVIGATION ---
-    function showPage(pageId) {
+   function showPage(pageId) {
         // Coupe toutes les vidéos instantanément au changement de page
         document.querySelectorAll('video').forEach(video => {
             video.pause();
@@ -353,20 +353,28 @@ document.addEventListener('DOMContentLoaded', function () {
             page.classList.add('active');
         }
 
+        // Récupération de tous les éléments de la barre de navigation
         const homeNav = document.getElementById('nav-menu');
         const infoNav = document.getElementById('nav-info');
+        const cartNav = document.getElementById('nav-cart-btn');
         const contactNav = document.getElementById('nav-contact');
 
-        homeNav.classList.remove('active');
-        infoNav.classList.remove('active');
-        contactNav.classList.remove('active');
+        // Nettoyage systématique des classes actives
+        if (homeNav) homeNav.classList.remove('active');
+        if (infoNav) infoNav.classList.remove('active');
+        if (cartNav) cartNav.classList.remove('active');
+        if (contactNav) contactNav.classList.remove('active');
 
+        // Gestion précise de l'état actif selon la page courante
         if (pageId === 'page-contact') {
-            contactNav.classList.add('active');
+            if (contactNav) contactNav.classList.add('active');
         } else if (pageId === 'page-info') {
-            infoNav.classList.add('active');
+            if (infoNav) infoNav.classList.add('active');
+        } else if (pageId === 'page-cart' || pageId === 'page-confirmation') {
+            // Le bouton panier reste actif pendant la consultation et la validation
+            if (cartNav) cartNav.classList.add('active');
         } else {
-            homeNav.classList.add('active');
+            if (homeNav) homeNav.classList.add('active');
         }
     }
 
@@ -814,13 +822,21 @@ document.addEventListener('DOMContentLoaded', function () {
         `).join('');
     }
 
-    function updateCartCount() {
+   function updateCartCount() {
         const count = cart.reduce((sum, item) => sum + item.quantity, 0);
         const cartCountElements = document.querySelectorAll('.cart-count');
+        const navCartSvg = document.getElementById('nav-cart-svg');
+
+        // Met à jour les bulles de compteur
         cartCountElements.forEach(el => {
             el.innerText = count;
             el.style.display = count > 0 ? 'flex' : 'none';
         });
+
+        // Bascule logique : si panier > 0, on cache le SVG
+        if (navCartSvg) {
+            navCartSvg.style.display = count > 0 ? 'none' : 'block';
+        }
     }
 
     function populateFilters() {
@@ -980,6 +996,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (pageId === 'page-contact') {
                 renderContactPage();
+            }
+
+            // --- NOUVELLE CONDITION PANIER ---
+            if (pageId === 'page-cart') {
+                renderCart();
             }
 
             if (pageId === 'page-home') {

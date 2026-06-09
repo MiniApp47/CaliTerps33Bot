@@ -34,7 +34,7 @@
 
             /* --- MODIFICATION POUR LE FOND D'ÉCRAN --- */
             /* Remplace 'fond-ecran.jpg' par le nom de ton image */
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Fondecran.png');
+                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0 0 0 / 0%)), url(Fondecran.png);
             background-size: cover;
             /* L'image couvre tout l'espace */
             background-position: center center;
@@ -113,7 +113,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            border: 1px solid #220096;
+            border: 1px solid #cf81a0;
         }
 
         #page-loader img {
@@ -140,7 +140,7 @@
         /* --- Page d'accueil --- */
         .top-marquee {
             background-color: var(--tertiary-bg-color);
-            color: #5b37d4;
+            color: #c174ad;
             padding: 8px 0;
             overflow: hidden;
             font-weight: 500;
@@ -189,7 +189,7 @@
     transform: translate(-50%, -50%);
     height: 14vh;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px 2px #220096;
+    box-shadow: 0px 0px 10px 2px #cf81a0;
         }
 
         #page-home .cart-button {
@@ -201,11 +201,11 @@
             color: white;
             position: relative;
             cursor: pointer;
-            display: flex;
+            display: none;
             /* MODIFIÉ pour l'afficher */
             align-items: center;
             justify-content: center;
-            box-shadow: 0px 0px 10px 2px #220096;
+            box-shadow: 0px 0px 10px 2px #cf81a0;
         }
 
         #quality-filter {
@@ -336,7 +336,7 @@
             width: 100%;
             border-radius: 20px;
             text-align: center;
-            border: 1px solid #220096;
+            border: 1px solid #cf81a0;
     background: linear-gradient(45deg, black, transparent);
         }
 
@@ -372,7 +372,7 @@
             cursor: pointer;
             position: relative;
                 border: 1px solid #5b37d4;
-    background: linear-gradient(#34c759, #5b37d4);
+        background: linear-gradient(#be6bb0, #5b37d4);
     height: 95%;
         }
 
@@ -421,13 +421,14 @@
             text-align: center;
             font-family: American Typewriter, serif	;
             font-size: 14px;
+                color: #ffd384;
         }
 
         .product-card .farm {
-            color: var(--hint-color);
-            font-size: 0.8rem;
-            text-align: center;
-            border-bottom: 1px solid grey;
+                color: #ff97e4;
+    font-size: 0.8rem;
+    text-align: center;
+    border-bottom: 1px solid #ff97e4;
             margin-bottom: 5px;
         }
 
@@ -469,15 +470,15 @@
             border-radius: 20px;
             /* height: 5vh; */
             width: 12vh;
-                color: #220096;
+            color: #cba478;
     padding: 1vh;
     border: none;
-    box-shadow: 0px 0px 10px 2px #5b37d4;
+    box-shadow: 0px 0px 10px 2px #cf81a0;
     cursor: pointer;
         }
 
         .nav-item.active {
-            color: #5b37d4;
+                            color: #cf81a0;
             background-color: #000000d1;
         }
 
@@ -502,11 +503,11 @@
         .product-details .name {
             font-size: 1.5rem;
             font-weight: 700;
-            font-family: cursive;
+            font-family: emoji;
         }
 
         .product-details .farm {
-            color: #51a27a;
+            color: #ff97e4;
         }
 
         .product-details .tarifs-title {
@@ -525,9 +526,9 @@
 
         .add-to-cart-btn {
             background: linear-gradient(black, #012e51);
-            border: 1px solid #5b37d4;
-            border-radius: 8px;
-            color: #5b37d4;
+           border: 1px solid #df493b;
+    border-radius: 8px;
+    color: #c8483c;
             width: 50%;
             height: 5vh;
             cursor: pointer;
@@ -568,7 +569,7 @@
 
         .cart-item .name {
             font-weight: 500;
-            font-family: cursive;
+            font-family: emoji;
             margin-bottom: 1vh;
             margin-top: 1vh;
 
@@ -580,7 +581,7 @@
         }
 
         .cart-item .price {
-            color: #5b37d4;
+            color: #c437d4;
             font-weight: 700;
             margin-bottom: 1vh;
         }
@@ -650,14 +651,16 @@
         }
 
         .main-action-btn {
-            background: #5c37d4c1;
-            color: white;
-            padding: 15px;
-            border-radius: 10px;
-            border: none;
-            font-size: 1rem;
-            font-weight: 700;
-            cursor: pointer;
+            background: #ef711c;
+    color: #000000;
+    border: 2px solid #000000;
+    padding: 15px;
+    border-radius: 10px;
+    /* border: none; */
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    height: 8vh;
         }
 
         .secondary-action-btn {
@@ -738,7 +741,7 @@
             justify-content: center;
             border-radius: 20px;
                 border: 1px solid #5b37d4;
-    background: linear-gradient(#34c759, #5b37d4);
+    background: linear-gradient(#be6bb0, #5b37d4);
             width: 90%;
             height: 4vh;
         }
@@ -748,8 +751,8 @@
             visibility: hidden;
             /* Caché par défaut */
             min-width: 250px;
-            background-color:#5c37d4c1;
-            color: #fff;
+                background-color: #b164b4b3;
+    color: #000000;
             text-align: center;
             border-radius: 10px;
             padding: 16px;
@@ -813,13 +816,13 @@
         }
 
         .box-tarif .tarif-wieght {
-           border-bottom: 2px solid #5b37d4;
+           border-bottom: 2px solid #752b24;
     width: 70%;
     text-align: center;
     height: 3.5vh;
     padding: 1vh;
     font-size: 30px;
-    color: #5b37d4;
+    color: #752b24;
         }
 
         .box-tarif .tarif-price {
@@ -880,7 +883,7 @@
             margin-top: 2vh;
     height: 14vh;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px 2px #220096;
+    box-shadow: 0px 0px 10px 2px #cf81a0;
 
         }
 
@@ -1183,6 +1186,21 @@
         #nav-info {
             display: none;
         }
+/* --- DESIGN DU COMPTEUR PANIER NAV BAR --- */
+        .nav-cart-counter {
+            background: #cc36b2;
+            color: white;
+            border-radius: 50%;
+            font-size: 0.85rem;
+            width: 22px;
+            height: 22px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            box-shadow: 0px 0px 8px 1px #cc36b2;
+        }
+        
 
         /* --- NOUVEAU STYLE POUR LA GRILLE DES TARIFS --- */
 
@@ -1255,7 +1273,7 @@
     outline: none;
     width: 100%;
     padding: 20px;
-    background: linear-gradient(45deg, #483a73 0%, #6a7a1e 80%, #005c30 100%, transparent);
+    background: linear-gradient(45deg, #483a73 0%, #b566ac 80%, #005c30 100%, transparent);
     /* background: linear-gradient(45deg, #c41e13 0%, #d4af37 50%, #005c30 100%); */
     background-size: 200% auto;
     color: #ed9c27;
@@ -1334,7 +1352,7 @@
 /* --- STYLE SPÉCIAL PACKS PROMO --- */
 .product-card.promo-card {
     background: linear-gradient(135deg, #2c0e0e 0%, #5e1313 100%); /* Fond rouge sombre Noël */
-    border: 2px solid #220096; /* Bordure rouge vif */
+    border: 2px solid #cf81a0; /* Bordure rouge vif */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1707,12 +1725,12 @@
             </div> -->
         </div>
         <div class="cart-actions">
-
+<button id="confirm-order-button" class="main-action-btn telegram-button" style="margin-top: 10px;">
+                🚀 Envoyer la commande
+            </button>
             <button id="confirmation-modify-order" class="secondary-action-btn">✏️ Modifier</button>
 
-            <button id="confirm-order-button" class="main-action-btn telegram-button" style="margin-top: 10px;">
-                🚀 Envoyer la commande sur Telegram
-            </button>
+            
 
 
             <!--     <button id="copy-order-btn" class="secondary-action-btn">
@@ -1746,6 +1764,13 @@
                 <use href="#icon-info" />
             </svg>
             <p style="margin: inherit;"> INFO </p>
+        </button>
+        <button id="nav-cart-btn" data-page="page-cart" class="nav-item">
+            <div style="height: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 5px;">
+                <svg id="nav-cart-svg" width="20" height="20"><use href="#icon-cart" /></svg>
+                <span class="cart-count nav-cart-counter" style="display: none;">0</span>
+            </div>
+            <p style="margin: inherit;"> PANIER </p>
         </button>
         <button id="nav-contact" data-page="page-contact" class="nav-item">
             <svg width="20" height="20">
