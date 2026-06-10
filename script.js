@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
             url: 'https://wa.me/212724671885',
             icon: '#icon-whatsapp',
             id: 'whatsapp-main',
-            className: 'signal', // Utilise un fond uni pour contraster
+            className: 'whatsapp', // Utilise un fond uni pour contraster
             text: "WHATSAPP 📲"
         },
         {
@@ -45,8 +45,16 @@ document.addEventListener('DOMContentLoaded', function () {
             url: 'https://tatokdym.org/joinchat/tyDsi03At3N8dZcm2H2wyg',
             icon: '#icon-potato',
             id: 'potato-secours',
-            className: 'potato-main',
+            className: 'potato-secours',
             text: "POTATO RETOUR 🤳"
+        },
+        {
+            name: 'DISCORD 👾',
+            url: 'https://discord.gg/rqDCqYvWA%5D',
+            icon: '#icon-discord',
+            id: 'discord',
+            className: 'signal',
+            text: "DISCORD 👾"
         }
     ];
 
@@ -169,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         }
                     ]
                 },
-                {
+               /*  {
                     id: 'EGGS STATIC',
                     name: '🫒 EGGS STATIC SIFT 🫒',
                     image: '',
@@ -192,8 +200,8 @@ document.addEventListener('DOMContentLoaded', function () {
                             ]
                         }
                     ]
-                },
-                {
+                }, */
+               /*  {
                     id: 'TOP 120U',
                     name: '🇲🇦 TOP 120u 🇲🇦',
                     image: '',
@@ -217,7 +225,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             ]
                         }
                     ]
-                }
+                } */
             ]
         },
 
@@ -237,6 +245,23 @@ document.addEventListener('DOMContentLoaded', function () {
                     badgeText: '1 produit',
                     products: [
                         {
+                            id: 'GARY PAYTON 🇺🇸🔥',
+                            name: 'GARY PAYTON 🇺🇸🔥',
+                            farm: '📍 HYBRIDE PREMIUM ',
+                            promoEligible: false,
+                            type: 'Weed',
+                            image: 'ProductGar.jpg',
+                            video: 'VideoGar.mp4',
+                            description: '🔥🇺🇸 CALI USA / STYLE CALIFORNIEN 🇺🇸🔥\n\n 🌿 GARY PAYTON\n\n 👃 Odeur / goût : mélange diesel ⛽, terre 🌱, épices 🌶️ et légère touche sucrée 🍬, très “weed Cali” bien puissante et reconnaissable.\n\n 🧠 Effets : euphorie mentale ⚡, bonne humeur 😄, gros high cérébral, puis détente du corps 🛋️ sans trop te casser.\n\n ⚖️ Sensation : high équilibré (tête + corps), propre mais fort, assez “fonctionnel” au début',
+                            tarifs: [
+                                { weight: '5g', price: 70.00 },
+                                { weight: '10g', price: 130.00 },
+                                { weight: '25g', price: 220.00 },
+                                { weight: '50g', price: 350.00 },
+                                { weight: '100g', price: 650.00 },
+                            ]
+                        }
+                       /*  {
                             id: 'RAINBOW 🍬',
                             name: 'RAINBOW 🍬',
                             farm: 'USA BAGS 🎒',
@@ -252,7 +277,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: '50g', price: 350.00 },
                                 { weight: '100g', price: 600.00 },
                             ]
-                        }
+                        } */
                     ]
                 }
             ]
