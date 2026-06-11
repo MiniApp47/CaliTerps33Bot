@@ -252,7 +252,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: 'Weed',
                             image: 'ProductGar.jpg',
                             video: 'VideoGar.mp4',
-                            description: '🔥🇺🇸 CALI USA / STYLE CALIFORNIEN 🇺🇸🔥\n\n 🌿 GARY PAYTON\n\n 👃 Odeur / goût : mélange diesel ⛽, terre 🌱, épices 🌶️ et légère touche sucrée 🍬, très “weed Cali” bien puissante et reconnaissable.\n\n 🧠 Effets : euphorie mentale ⚡, bonne humeur 😄, gros high cérébral, puis détente du corps 🛋️ sans trop te casser.\n\n ⚖️ Sensation : high équilibré (tête + corps), propre mais fort, assez “fonctionnel” au début',
+                            description: '🔥🇺🇸 CALI USA / STYLE CALIFORNIEN 🇺🇸🔥\n\n 🌿 GARY PAYTON\n\n 👃 Odeur / goût : mélange diesel ⛽, terre 🌱, épices 🌶️ et légère touche sucrée 🍬, très “weed Cali” bien puissante et reconnaissable.\n 🧠 Effets : euphorie mentale ⚡, bonne humeur 😄, gros high cérébral, puis détente du corps 🛋️',
                             tarifs: [
                                 { weight: '5g', price: 70.00 },
                                 { weight: '10g', price: 130.00 },
